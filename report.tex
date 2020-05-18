@@ -1,0 +1,59 @@
+%\documentclass{article}
+\documentclass[
+    headsepline,
+    footsepline,
+    footinclude=false,
+    oneside,
+    fontsize=11pt,
+    paper=a4,
+    listof=totoc,
+    bibliography=totoc,
+    chapterprefix = true,
+    headings=twolinechapter,
+    headings=big,
+]{scrbook}
+
+\input{settings}
+
+\makeatletter
+
+% Bibliography
+\usepackage[backend=biber]{biblatex}
+\addbibresource{report.bib}
+
+% ----------------------- INFORMATION -------------------------- %
+
+\newcommand*{\getUniversity}{University of Delhi}
+\newcommand*{\getFaculty}{Faculty of Mathematical Sciences}
+\newcommand*{\getDepartment}{Department of Computer Science}
+\newcommand*{\getTitle}{Sample Project Title}
+\newcommand*{\getAuthor}{Author}
+\newcommand*{\getDoctype}{MCS-401 Major Project Report}
+\newcommand*{\getDegree}{M.Sc. Computer Science}
+\newcommand*{\getSupervisor}{Dr. Supervisor}
+\newcommand*{\getSubmissionDate}{May 2020}
+
+% ----------------------- DOCUMENT -------------------------- %
+
+\begin{document}
+
+\frontmatter{}
+\pagenumbering{roman}
+\input{pages/cover}
+\input{pages/abstract}
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+\newpage
+
+\mainmatter{}
+\input{chapters/01_introduction}
+
+\appendix
+\input{chapters/appendixA}
+\input{chapters/appendixB}
+
+\nocite{*}
+\printbibliography
+
+\end{document}
