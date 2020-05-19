@@ -1,12 +1,12 @@
 \usepackage[dvipsnames]{xcolor}
 \definecolor{mygray}{gray}{0.5}
 
-
 \usepackage{tocloft}
 \renewcommand\cfttoctitlefont{\hspace*{\fill}\Huge\textcolor{mygray}}
 
+\setkomafont{chapter}{\normalfont\Huge}
+\renewcommand*{\raggedchapter}{\raggedleft}
 
-\setkomafont{chapter}{\hspace*{\fill}\normalfont\Huge}
 \setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
 \setkomafont{section}{\Large\rmfamily}
 
@@ -19,7 +19,3 @@
 
 \setlength{\skip\footins}{1.2pc plus 5pt minus 2pt}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
-
-
-
-
