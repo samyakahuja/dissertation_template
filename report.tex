@@ -2,7 +2,7 @@
 \documentclass[
     headsepline,
     footsepline,
-    footinclude=false,
+    %footinclude=false,
     oneside,
     fontsize=11pt,
     paper=a4,
@@ -30,7 +30,10 @@
 \newcommand*{\getAuthor}{Author}
 \newcommand*{\getDoctype}{MCS-401 Major Project Report}
 \newcommand*{\getDegree}{M.Sc. Computer Science}
-\newcommand*{\getSupervisor}{Dr. Supervisor}
+\newcommand*{\getAdvisorFirst}{Dr. SupervisorOne}
+\newcommand*{\getAdvisorOneDesc}{University 1}
+\newcommand*{\getAdvisorSecond}{Dr. SupervisorTwo}
+\newcommand*{\getAdvisorTwoDesc}{University 2}
 \newcommand*{\getSubmissionDate}{May 2020}
 
 % ----------------------- DOCUMENT -------------------------- %
@@ -41,9 +44,8 @@
 \pagenumbering{roman}
 \input{pages/cover}
 \input{pages/abstract}
+\newpage
 \tableofcontents{}
-\listoffigures{}
-\listoftables{}
 \newpage
 
 \mainmatter{}
